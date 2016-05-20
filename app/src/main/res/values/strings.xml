@@ -1,0 +1,20 @@
+<resources>
+    <string name="leaves_central_building">Saída do Prédio Central</string>
+    <string name="main_gate">Portão de Acesso</string>
+    <string name="arrives_central_building">Chegada ao Prédio Central</string>
+    <string name="holidays">Férias</string>
+    <string name="term_days">Periodo Letivo</string>
+    <string name="monday_to_friday">Segunda à Sexta-Feira</string>
+    <string name="app_name">Cardápio do Dia</string>
+    <string name="main_title">CARDÁPIO DO DIA</string>
+    <string name="description_main">Cardápio e Laranjinha da FZEA na palma da sua mão!</string>
+    <string name="lunch">Almoço</string>
+    <string name="lunch_hours">11:00 às 13:30</string>
+    <string name="dinner">Jantar</string>
+    <string name="dinner_hours">17:00 às 19:15</string>
+    <string name="bus_schedule_title_main_screen">Horário de Ônibus - Interno</string>
+    <string name="bus_schedule_message">Veja abaixo os horários</string>
+    <string name="bus_schedule_description">Não perca seu ônibus e chegue sempre no horário</string>
+    <string name="bus_schedule_title">LARANJINHA</string>
+    <string name="date_format">EEEE, d de MMMM de y</string>
+</resources>

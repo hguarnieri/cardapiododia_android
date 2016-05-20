@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="leaves_central_building">Leaves Central Building</string>
+    <string name="main_gate">Main Gate</string>
+    <string name="arrives_central_building">Arives Central Building</string>
+    <string name="holidays">Holidays</string>
+    <string name="term_days">Term days</string>
+    <string name="monday_to_friday">Monday to Friday</string>
+    <string name="app_name">University Menu</string>
+    <string name="main_title">UNIVERSITY MENU</string>
+    <string name="bus_schedule_title_main_screen">Bus Schedule - On Campus</string>
+    <string name="description_main">Menu and Bus Schedule easily for you!</string>
+    <string name="dinner">Dinner</string>
+    <string name="dinner_hours">05:00 PM - 07:15 PM</string>
+    <string name="lunch">Lunch</string>
+    <string name="lunch_hours">11:00 AM - 01:30 PM</string>
+    <string name="bus_schedule_description">Never lose your bus, and be always on time</string>
+    <string name="bus_schedule_message">See your times below</string>
+    <string name="bus_schedule_title">BUS SCHEDULE</string>
+    <string name="date_format">EEEE, d MMMM y</string>
+</resources>

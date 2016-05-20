@@ -1,9 +1,0 @@
-package com.hguarnieri.fzea.utils;
-
-/**
- * Created by hguar_000 on 06/08/2014.
- */
-public enum Horario {
-    SAIDA_PREDIO_CENTRAL, PORTAO_DE_ACESSO, CHEGADA_PREDIO_CENTRAL,
-    FERIAS_SAIDA_PREDIO_CENTRAL, FERIAS_PORTAO_DE_ACESSO, FERIAS_CHEGADA_PREDIO_CENTRAL,
-}

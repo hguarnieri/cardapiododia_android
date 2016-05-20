@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <color name="blue">#ff3884a2</color>
-    <color name="gray">#ffa5a5a5</color>
-    <color name="white">#FFFFFF</color>
-    <color name="red">#FF1300</color>
-    <color name="soft_red">#ffff2b1c</color>
-    <color name="strong_red">#B9242A</color>
-</resources>
