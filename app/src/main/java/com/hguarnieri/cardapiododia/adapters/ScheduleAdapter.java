@@ -1,4 +1,4 @@
-package com.hguarnieri.cardapiododia.utils;
+package com.hguarnieri.cardapiododia.adapters;
 
 import android.app.Activity;
 import android.graphics.Typeface;
@@ -8,6 +8,9 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
+
+import com.hguarnieri.cardapiododia.enums.Schedule;
+import com.hguarnieri.cardapiododia.services.SchedulesService;
 
 public class ScheduleAdapter extends BaseAdapter {
     private Activity activity;
@@ -23,12 +26,12 @@ public class ScheduleAdapter extends BaseAdapter {
 
         TextView scheduleTextView = new TextView(this.activity);
         scheduleTextView.setLayoutParams(new ListView.LayoutParams(ListView.LayoutParams.MATCH_PARENT, ListView.LayoutParams.WRAP_CONTENT));
-        scheduleTextView.setText(Schedules.getSchedule(this.type, position));
+        scheduleTextView.setText(SchedulesService.getSchedule(this.type, position));
         scheduleTextView.setTextSize(16);
         scheduleTextView.setGravity(Gravity.CENTER_HORIZONTAL);
 
-        String next = Schedules.getNextTime(this.type);
-        if (next.equals(Schedules.getSchedule(type, position))) {
+        String next = SchedulesService.getNextTime(this.type);
+        if (next.equals(SchedulesService.getSchedule(type, position))) {
             scheduleTextView.setTypeface(null, Typeface.BOLD);
         }
 
@@ -37,12 +40,12 @@ public class ScheduleAdapter extends BaseAdapter {
 
     @Override
     public int getCount() {
-        return Schedules.getLength(type);
+        return SchedulesService.getLength(type);
     }
 
     @Override
     public Object getItem(int position) {
-        return Schedules.getSchedule(this.type, position);
+        return SchedulesService.getSchedule(this.type, position);
     }
 
     @Override

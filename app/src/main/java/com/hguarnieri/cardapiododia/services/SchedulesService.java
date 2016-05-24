@@ -1,6 +1,8 @@
-package com.hguarnieri.cardapiododia.utils;
+package com.hguarnieri.cardapiododia.services;
 
-public class Schedules {
+import com.hguarnieri.cardapiododia.utils.Functions;
+
+public class SchedulesService {
     private static String[][] stringSchedules = {{"05:35", "06:20", "07:30", "08:30", "09:30", "11:05", "11:50", "12:25","13:15", "13:35",
             "14:30", "15:30", "16:05", "17:05", "17:35", "18:05", "19:50", "20:45", "21:50", "22:50"},
 

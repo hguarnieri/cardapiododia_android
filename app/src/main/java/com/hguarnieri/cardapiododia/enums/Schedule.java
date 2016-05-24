@@ -1,4 +1,4 @@
-package com.hguarnieri.cardapiododia.utils;
+package com.hguarnieri.cardapiododia.enums;
 
 public enum Schedule {
     LEAVES_CENTRAL_BUILDING(0), MAIN_GATE(1), ARIVES_CENTRAL_BUILDING(2),

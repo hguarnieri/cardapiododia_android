@@ -10,8 +10,8 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.hguarnieri.cardapiododia.R;
-import com.hguarnieri.cardapiododia.utils.Schedule;
-import com.hguarnieri.cardapiododia.utils.ScheduleAdapter;
+import com.hguarnieri.cardapiododia.enums.Schedule;
+import com.hguarnieri.cardapiododia.adapters.ScheduleAdapter;
 
 public class ScheduleFragment extends Fragment {
 

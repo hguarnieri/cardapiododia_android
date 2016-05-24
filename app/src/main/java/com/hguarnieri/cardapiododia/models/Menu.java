@@ -3,7 +3,7 @@ package com.hguarnieri.cardapiododia.models;
 /**
  * Created by Henrique on 11/03/2015.
  */
-public class Cardapio {
+public class Menu {
     public String getData() {
         return data;
     }
