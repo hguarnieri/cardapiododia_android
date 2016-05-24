@@ -11,12 +11,14 @@ import com.hguarnieri.cardapiododia.R;
 import com.hguarnieri.cardapiododia.models.Menu;
 import com.hguarnieri.cardapiododia.services.MenusService;
 
-/**
- * Created by Henrique on 20/05/2016.
- */
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+
 public class MenuFragment extends Fragment {
 
-    int dia;
+    // Stores which day of the week it represents
+    int day_of_week;
+    boolean isLunch;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -28,33 +30,38 @@ public class MenuFragment extends Fragment {
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
-        dia = getArguments().getInt("dia");
+        day_of_week = getArguments().getInt("day_of_week");
+        isLunch = getArguments().getBoolean("isLunch");
 
-        Menu menu = MenusService.menus.get(dia);
+        Menu menu = MenusService.menus.get(day_of_week + (isLunch ? 0 : 5));
 
-        TextView txtDia = (TextView) getView().findViewById(R.id.inside_fragment_cardapio_dia);
+        // Get references for the TextViews
+        TextView dayTextView = (TextView) getView().findViewById(R.id.inside_fragment_cardapio_dia);
+        TextView mainOptionTextView = (TextView) getView().findViewById(R.id.inside_fragment_cardapio_principal);
+        TextView secondOptionTextView = (TextView) getView().findViewById(R.id.inside_fragment_cardapio_opcao);
+        TextView sidePlateTextView = (TextView) getView().findViewById(R.id.inside_fragment_cardapio_guarnicao);
+        TextView saladTextView = (TextView) getView().findViewById(R.id.inside_fragment_cardapio_salada);
+        TextView desertTextView = (TextView) getView().findViewById(R.id.inside_fragment_cardapio_sobremesa);
+        TextView juiceTextView = (TextView) getView().findViewById(R.id.inside_fragment_cardapio_suco);
 
-        TextView txtPrincipal = (TextView) getView().findViewById(R.id.inside_fragment_cardapio_principal);
-        TextView txtOpcao = (TextView) getView().findViewById(R.id.inside_fragment_cardapio_opcao);
-        TextView txtGuarnicao = (TextView) getView().findViewById(R.id.inside_fragment_cardapio_guarnicao);
-        TextView txtSalada = (TextView) getView().findViewById(R.id.inside_fragment_cardapio_salada);
-        TextView txtSobremesa = (TextView) getView().findViewById(R.id.inside_fragment_cardapio_sobremesa);
-        TextView txtSuco = (TextView) getView().findViewById(R.id.inside_fragment_cardapio_suco);
+        // Set text on the TextViews
+        mainOptionTextView.setText(getText(menu.getPrincipal()));
+        secondOptionTextView.setText(getText(menu.getOpcao()));
+        sidePlateTextView.setText(getText(menu.getGuarnicao()));
+        saladTextView.setText(getText(menu.getSalada()));
+        desertTextView.setText(getText(menu.getSobremesa()));
+        juiceTextView.setText(getText(menu.getSuco()));
 
-        txtPrincipal.setText(getText(menu.getPrincipal()));
-        txtOpcao.setText(getText(menu.getOpcao()));
-        txtGuarnicao.setText(getText(menu.getGuarnicao()));
-        txtSalada.setText(getText(menu.getSalada()));
-        txtSobremesa.setText(getText(menu.getSobremesa()));
-        txtSuco.setText(getText(menu.getSuco()));
-
-        //Functions.DiaDaSemana(semana + 2 - tipo * 4)
-        txtDia.setText("");
+        // Set the day of week on the TextView date
+        Calendar calendar = Calendar.getInstance();
+        calendar.set(Calendar.DAY_OF_WEEK, Calendar.MONDAY + day_of_week);
+        dayTextView.setText(new SimpleDateFormat("EEEE").format(calendar.getTime()));
     }
 
+    // Returns text for the TextView
     private String getText(String value) {
         if (value.equals("-")) {
-            return "Não definido";
+            return getResources().getString(R.string.not_defined);
         } else {
             return value;
         }

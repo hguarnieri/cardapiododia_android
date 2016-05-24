@@ -18,4 +18,7 @@
     <string name="bus_schedule_message">See your times below</string>
     <string name="bus_schedule_title">BUS SCHEDULE</string>
     <string name="date_format">EEEE, d MMMM y</string>
+    <string name="not_defined">Not defined</string>
+    <string name="menu_description">Discover the menu of the restaurant here</string>
+    <string name="menu_title">MENU</string>
 </resources>

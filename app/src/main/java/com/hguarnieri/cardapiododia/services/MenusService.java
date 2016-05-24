@@ -19,25 +19,7 @@ public class MenusService {
 
         @Override
         protected List<Menu> doInBackground(Void... params) {
-
-            List<Menu> menus = getMenus();
-
-            SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
-            Calendar cal = Calendar.getInstance();
-            cal.set(Calendar.DAY_OF_WEEK, Calendar.MONDAY);
-
-            int i = 0;
-            for(Menu c : menus) {
-                cal.add(Calendar.DAY_OF_WEEK, i++);
-                c.setData(sdf.format(cal.getTime()));
-
-                if (i == 5) {
-                    i = 0;
-                    cal.set(Calendar.DAY_OF_WEEK, Calendar.MONDAY);
-                }
-            }
-
-            return menus;
+            return getMenus();
         }
 
         public List<Menu> getMenus() {

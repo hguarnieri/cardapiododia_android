@@ -4,8 +4,11 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.Button;
 
 import com.hguarnieri.cardapiododia.fragments.MenuFragment;
 import com.hguarnieri.cardapiododia.models.Menu;
@@ -17,6 +20,10 @@ public class MenuActivity extends AppCompatActivity {
 
     SectionsPagerAdapter pagerAdapter;
     ViewPager viewMenusPager;
+    Button lunchButton;
+    Button dinnerButton;
+
+    static boolean isLunch = true;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +32,33 @@ public class MenuActivity extends AppCompatActivity {
 
         getMenu();
 
+        this.lunchButton = (Button) findViewById(R.id.fragment_menu_lunch_button);
+        this.dinnerButton = (Button) findViewById(R.id.fragment_menu_dinner_button);
+
+        this.lunchButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                isLunch = true;
+                refreshScreen();
+            }
+        });
+
+        this.dinnerButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                isLunch = false;
+                refreshScreen();
+            }
+        });
+
         getSupportActionBar().hide();
+    }
+
+    public void refreshScreen() {
+        this.pagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
+
+        this.viewMenusPager = (ViewPager) findViewById(R.id.pager);
+        this.viewMenusPager.setAdapter(pagerAdapter);
     }
 
     public void getMenu() {
@@ -36,19 +69,12 @@ public class MenuActivity extends AppCompatActivity {
 
                 MenusService.menus = menus;
 
-                refresh();
+                refreshScreen();
             }
         }).execute();
     }
 
-    public void refresh() {
-        pagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
-
-        viewMenusPager = (ViewPager) findViewById(R.id.pager);
-        viewMenusPager.setAdapter(pagerAdapter);
-    }
-
-    public static class SectionsPagerAdapter extends FragmentPagerAdapter {
+    public static class SectionsPagerAdapter extends FragmentStatePagerAdapter {
 
         public SectionsPagerAdapter(FragmentManager fm) {
             super(fm);
@@ -59,7 +85,8 @@ public class MenuActivity extends AppCompatActivity {
             Fragment fragment = new MenuFragment();
             Bundle bundle = new Bundle();
 
-            bundle.putInt("dia", position);
+            bundle.putInt("day_of_week", position);
+            bundle.putBoolean("isLunch", isLunch);
             fragment.setArguments(bundle);
 
             return fragment;
@@ -69,6 +96,5 @@ public class MenuActivity extends AppCompatActivity {
         public int getCount() {
             return 5;
         }
-
     }
 }

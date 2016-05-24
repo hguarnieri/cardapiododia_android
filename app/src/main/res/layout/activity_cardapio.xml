@@ -37,14 +37,14 @@
                 <com.hguarnieri.cardapiododia.utils.TypeFacedTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="CARDÁPIO"
+                    android:text="@string/menu_title"
                     android:textColor="@color/white"
                     android:textSize="24dp" />
 
                 <com.hguarnieri.cardapiododia.utils.TypeFacedTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Descubra em primeira mão o cardápio de hoje"
+                    android:text="@string/menu_description"
                     android:textColor="@color/white"
                     android:textSize="16dp" />
 
@@ -60,24 +60,24 @@
 
 
                 <Button
-                    android:id="@+id/fragment_cardapio_btnAlmoco"
+                    android:id="@+id/fragment_menu_lunch_button"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@color/soft_red"
                     android:layout_margin="5dp"
                     android:textColor="@color/white"
                     android:layout_weight="1"
-                    android:text="Almoço"/>
+                    android:text="@string/lunch"/>
 
                 <Button
-                    android:id="@+id/fragment_cardapio_btnJantar"
+                    android:id="@+id/fragment_menu_dinner_button"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
                     android:background="@color/soft_red"
                     android:textColor="@color/white"
                     android:layout_weight="1"
-                    android:text="Jantar"/>
+                    android:text="@string/dinner"/>
 
 
         </LinearLayout>

@@ -16,5 +16,8 @@
     <string name="bus_schedule_message">Veja abaixo os horários</string>
     <string name="bus_schedule_description">Não perca seu ônibus e chegue sempre no horário</string>
     <string name="bus_schedule_title">LARANJINHA</string>
-    <string name="date_format">EEEE, d de MMMM de y</string>
+    <string name="date_format">EEEE, d \'de\' MMMM \'de\' y</string>
+    <string name="not_defined">Não definido</string>
+    <string name="menu_description">Descubra em primeira mão o cardápio de hoje</string>
+    <string name="menu_title">CARDÁPIO</string>
 </resources>

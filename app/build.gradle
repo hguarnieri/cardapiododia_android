@@ -5,11 +5,11 @@ android {
     buildToolsVersion "23.0.3"
 
     defaultConfig {
-        applicationId "com.hguarnieri.cardapiododia"
+        applicationId "com.hguarnieri.fzea"
         minSdkVersion 15
         targetSdkVersion 23
-        versionCode 1
-        versionName "1.0"
+        versionCode 11
+        versionName "2.1.0"
     }
     buildTypes {
         release {
