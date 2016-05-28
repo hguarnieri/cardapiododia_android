@@ -1,2 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
+
+    <item
+        jar="/Users/Henrique/cardapiododia_android/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="dc97a169e502a0470a4f8cadb9fb3ffe295015c3">
+        <dex dex="/Users/Henrique/cardapiododia_android/app/build/intermediates/pre-dexed/debug/instant-run-bootstrap_ab6f53d46a71b6df68f9dec1d9896e22021626ce.jar" />
+    </item>
+
+</items>

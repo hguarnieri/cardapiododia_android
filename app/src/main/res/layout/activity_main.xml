@@ -99,8 +99,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom"
-                    android:text="@string/lunch_hours"
                     android:layout_marginLeft="6dp"
+                    android:text="@string/lunch_hours"
                     android:textSize="16dp" />
 
                 <ImageView
@@ -135,8 +135,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom"
-                    android:text="@string/dinner_hours"
                     android:layout_marginLeft="6dp"
+                    android:text="@string/dinner_hours"
                     android:textSize="16dp" />
 
                 <ImageView
@@ -194,92 +194,100 @@
                 android:layout_marginTop="8dp"
                 android:background="@color/red" />
 
-            <LinearLayout
+            <ScrollView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:layout_height="match_parent">
 
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/bus" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
 
-                <com.hguarnieri.cardapiododia.utils.TypeFacedTextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="bottom"
-                    android:layout_marginLeft="6dp"
-                    android:text="@string/leaves_central_building"
-                    android:textSize="16dp" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
 
-                <com.hguarnieri.cardapiododia.utils.TypeFacedTextView
-                    android:id="@+id/main_screen_leaves_central_building_text"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="bottom"
-                    android:layout_marginLeft="5dp"
-                    android:textSize="16dp" />
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/bus" />
 
-            </LinearLayout>
+                        <com.hguarnieri.cardapiododia.utils.TypeFacedTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="6dp"
+                            android:text="@string/leaves_central_building"
+                            android:textSize="16dp" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                        <com.hguarnieri.cardapiododia.utils.TypeFacedTextView
+                            android:id="@+id/main_screen_leaves_central_building_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="5dp"
+                            android:textSize="16dp" />
 
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/bus" />
+                    </LinearLayout>
 
-                <com.hguarnieri.cardapiododia.utils.TypeFacedTextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="bottom"
-                    android:layout_marginLeft="6dp"
-                    android:text="@string/main_gate"
-                    android:textSize="16dp" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
 
-                <com.hguarnieri.cardapiododia.utils.TypeFacedTextView
-                    android:id="@+id/main_screen_main_gate_text"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="bottom"
-                    android:layout_marginLeft="5dp"
-                    android:textSize="16dp" />
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/bus" />
 
-            </LinearLayout>
+                        <com.hguarnieri.cardapiododia.utils.TypeFacedTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="6dp"
+                            android:text="@string/main_gate"
+                            android:textSize="16dp" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                        <com.hguarnieri.cardapiododia.utils.TypeFacedTextView
+                            android:id="@+id/main_screen_main_gate_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="5dp"
+                            android:textSize="16dp" />
 
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/bus" />
+                    </LinearLayout>
 
-                <com.hguarnieri.cardapiododia.utils.TypeFacedTextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="bottom"
-                    android:layout_marginLeft="6dp"
-                    android:text="@string/arrives_central_building"
-                    android:textSize="16dp" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
 
-                <com.hguarnieri.cardapiododia.utils.TypeFacedTextView
-                    android:id="@+id/main_screen_arrives_central_building_text"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="bottom"
-                    android:layout_marginLeft="5dp"
-                    android:textSize="16dp" />
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/bus" />
 
-            </LinearLayout>
+                        <com.hguarnieri.cardapiododia.utils.TypeFacedTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="6dp"
+                            android:text="@string/arrives_central_building"
+                            android:textSize="16dp" />
 
+                        <com.hguarnieri.cardapiododia.utils.TypeFacedTextView
+                            android:id="@+id/main_screen_arrives_central_building_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="5dp"
+                            android:textSize="16dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
         </LinearLayout>
-
     </LinearLayout>
-
 </RelativeLayout>

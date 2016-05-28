@@ -7,17 +7,26 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 
+import com.google.android.gms.analytics.HitBuilders;
+import com.google.android.gms.analytics.Tracker;
 import com.hguarnieri.cardapiododia.fragments.ScheduleFragment;
+import com.hguarnieri.cardapiododia.utils.AnalyticsApplication;
 
 public class ScheduleActivity extends AppCompatActivity {
 
     SectionsPagerAdapter pagerAdapter;
     ViewPager viewTimesPager;
 
+    Tracker mTracker;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_schedules);
+
+        // Google Analytics
+        AnalyticsApplication application = (AnalyticsApplication) getApplication();
+        mTracker = application.getDefaultTracker();
 
         pagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
 
@@ -25,6 +34,14 @@ public class ScheduleActivity extends AppCompatActivity {
         viewTimesPager.setAdapter(pagerAdapter);
 
         getSupportActionBar().hide();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        mTracker.setScreenName("Opened the ScheduleActivity");
+        mTracker.send(new HitBuilders.ScreenViewBuilder().build());
     }
 
     public static class SectionsPagerAdapter extends FragmentPagerAdapter {

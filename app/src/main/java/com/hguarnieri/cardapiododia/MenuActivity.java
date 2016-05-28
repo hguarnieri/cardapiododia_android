@@ -3,16 +3,18 @@ package com.hguarnieri.cardapiododia;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
+import com.google.android.gms.analytics.HitBuilders;
+import com.google.android.gms.analytics.Tracker;
 import com.hguarnieri.cardapiododia.fragments.MenuFragment;
 import com.hguarnieri.cardapiododia.models.Menu;
 import com.hguarnieri.cardapiododia.services.MenusService;
+import com.hguarnieri.cardapiododia.utils.AnalyticsApplication;
 
 import java.util.Calendar;
 import java.util.List;
@@ -28,10 +30,16 @@ public class MenuActivity extends AppCompatActivity {
 
     int currentDay = 0;
 
+    Tracker mTracker;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cardapio);
+        setContentView(R.layout.activity_menu);
+
+        // Google Analytics
+        AnalyticsApplication application = (AnalyticsApplication) getApplication();
+        mTracker = application.getDefaultTracker();
 
         this.lunchButton = (Button) findViewById(R.id.fragment_menu_lunch_button);
         this.dinnerButton = (Button) findViewById(R.id.fragment_menu_dinner_button);
@@ -43,6 +51,14 @@ public class MenuActivity extends AppCompatActivity {
         getMenu();
 
         getSupportActionBar().hide();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        mTracker.setScreenName("Opened the MenuActivity");
+        mTracker.send(new HitBuilders.ScreenViewBuilder().build());
     }
 
     public void createButtonListeners() {
