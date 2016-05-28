@@ -72,7 +72,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:text="Filé de Frango"
+                    android:text="@string/no_connection"
                     android:textSize="16dp"/>
 
                 </LinearLayout>
@@ -95,7 +95,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:text="Proteína Texturizada de Soja"
+                    android:text="@string/no_connection"
                     android:textSize="16dp"/>
 
             </LinearLayout>
@@ -118,7 +118,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:text="Batata Corada"
+                    android:text="@string/no_connection"
                     android:textSize="16dp"/>
 
             </LinearLayout>
@@ -141,7 +141,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:text="Chicória e Tomate"
+                    android:text="@string/no_connection"
                     android:textSize="16dp"/>
 
             </LinearLayout>
@@ -164,7 +164,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:text="Gelatina"
+                    android:text="@string/no_connection"
                     android:textSize="16dp"/>
 
             </LinearLayout>
@@ -187,7 +187,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:text="Abacaxi"
+                    android:text="@string/no_connection"
                     android:textSize="16dp"/>
 
             </LinearLayout>

@@ -20,4 +20,5 @@
     <string name="not_defined">Não definido</string>
     <string name="menu_description">Descubra em primeira mão o cardápio de hoje</string>
     <string name="menu_title">CARDÁPIO</string>
+    <string name="no_connection">Sem conexão</string>
 </resources>

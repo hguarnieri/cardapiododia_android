@@ -33,8 +33,6 @@ public class MenuFragment extends Fragment {
         day_of_week = getArguments().getInt("day_of_week");
         isLunch = getArguments().getBoolean("isLunch");
 
-        Menu menu = MenusService.menus.get(day_of_week + (isLunch ? 0 : 5));
-
         // Get references for the TextViews
         TextView dayTextView = (TextView) getView().findViewById(R.id.inside_fragment_cardapio_dia);
         TextView mainOptionTextView = (TextView) getView().findViewById(R.id.inside_fragment_cardapio_principal);
@@ -44,18 +42,23 @@ public class MenuFragment extends Fragment {
         TextView desertTextView = (TextView) getView().findViewById(R.id.inside_fragment_cardapio_sobremesa);
         TextView juiceTextView = (TextView) getView().findViewById(R.id.inside_fragment_cardapio_suco);
 
-        // Set text on the TextViews
-        mainOptionTextView.setText(getText(menu.getPrincipal()));
-        secondOptionTextView.setText(getText(menu.getOpcao()));
-        sidePlateTextView.setText(getText(menu.getGuarnicao()));
-        saladTextView.setText(getText(menu.getSalada()));
-        desertTextView.setText(getText(menu.getSobremesa()));
-        juiceTextView.setText(getText(menu.getSuco()));
+        if (MenusService.menus.size() > 1) {
+            Menu menu = MenusService.menus.get(day_of_week + (isLunch ? 0 : 5));
+
+            // Set text on the TextViews
+            mainOptionTextView.setText(getText(menu.getPrincipal()));
+            secondOptionTextView.setText(getText(menu.getOpcao()));
+            sidePlateTextView.setText(getText(menu.getGuarnicao()));
+            saladTextView.setText(getText(menu.getSalada()));
+            desertTextView.setText(getText(menu.getSobremesa()));
+            juiceTextView.setText(getText(menu.getSuco()));
+        }
 
         // Set the day of week on the TextView date
         Calendar calendar = Calendar.getInstance();
         calendar.set(Calendar.DAY_OF_WEEK, Calendar.MONDAY + day_of_week);
         dayTextView.setText(new SimpleDateFormat("EEEE").format(calendar.getTime()));
+
     }
 
     // Returns text for the TextView

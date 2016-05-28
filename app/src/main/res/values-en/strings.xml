@@ -21,4 +21,5 @@
     <string name="not_defined">Not defined</string>
     <string name="menu_description">Discover the menu of the restaurant here</string>
     <string name="menu_title">MENU</string>
+    <string name="no_connection">No connection</string>
 </resources>
