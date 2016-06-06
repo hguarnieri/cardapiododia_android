@@ -2,11 +2,109 @@
 <items version="2" >
 
     <item
-        jar="/Users/Henrique/cardapiododia_android/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
+        jar="/Users/Henrique/cardapiododia_android/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.0.0/jars/classes.jar"
+        jumboMode="false"
         revision="23.0.3"
-        sha1="dc97a169e502a0470a4f8cadb9fb3ffe295015c3">
-        <dex dex="/Users/Henrique/cardapiododia_android/app/build/intermediates/pre-dexed/debug/instant-run-bootstrap_ab6f53d46a71b6df68f9dec1d9896e22021626ce.jar" />
+        sha1="42df48c7305b08b14fa0e84561091b0c24d70d26">
+        <dex dex="/Users/Henrique/cardapiododia_android/app/build/intermediates/pre-dexed/release/com.google.firebase-firebase-common-9.0.0_29ef89ec420e794e067aeb327c36a96907aa93bb.jar" />
+    </item>
+    <item
+        jar="/Users/Henrique/cardapiododia_android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="1b8e03daaa43fb0a4cd57e378167c2fd70454c1e">
+        <dex dex="/Users/Henrique/cardapiododia_android/app/build/intermediates/pre-dexed/release/com.android.support-appcompat-v7-23.3.0_0d57f9b3f8237ec69f3d3d484bc930c9a2869820.jar" />
+    </item>
+    <item
+        jar="/Users/Henrique/cardapiododia_android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="8a034dd16c0dfd75fe86c52c2cd581592acc684a">
+        <dex dex="/Users/Henrique/cardapiododia_android/app/build/intermediates/pre-dexed/release/com.android.support-support-v4-23.3.0_12407ecb49d83ceb51ad38e908e363ec38dd8579.jar" />
+    </item>
+    <item
+        jar="/Users/Henrique/cardapiododia_android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.3.0/jars/libs/internal_impl-23.3.0.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="4da5a4d697d32497c6f85567a5112e62fdfd0676">
+        <dex dex="/Users/Henrique/cardapiododia_android/app/build/intermediates/pre-dexed/release/internal_impl-23.3.0_a24c6ed94cb1c6e4110f474f0ce3fad6245c4499.jar" />
+    </item>
+    <item
+        jar="/Users/Henrique/cardapiododia_android/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="ea4b54dcbfe5ac05efb0a314105f07258118d3a7">
+        <dex dex="/Users/Henrique/cardapiododia_android/app/build/intermediates/pre-dexed/release/com.google.firebase-firebase-iid-9.0.0_020d9a8b68567fa58c64be3a03285ffd00e9e736.jar" />
+    </item>
+    <item
+        jar="/Users/Henrique/cardapiododia_android/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="a0b5d60246cd9d4f3f2443611b3b4c25265840b5">
+        <dex dex="/Users/Henrique/cardapiododia_android/app/build/intermediates/pre-dexed/release/com.android.support-support-vector-drawable-23.3.0_ec3ba70a3270a0e552d29fd4fd0927bb43f94f23.jar" />
+    </item>
+    <item
+        jar="/Users/Henrique/cardapiododia_android/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.3.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="23be6993826b8fd88bbc8d14928bb3b8960d3d4e">
+        <dex dex="/Users/Henrique/cardapiododia_android/app/build/intermediates/pre-dexed/release/com.android.support-animated-vector-drawable-23.3.0_9b508f109d7acae5d45e5279831bd844daf39e73.jar" />
+    </item>
+    <item
+        jar="/Users/Henrique/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.3.0/support-annotations-23.3.0.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="db7791d75a07fef9844d06236c1c59ba7bf6997c">
+        <dex dex="/Users/Henrique/cardapiododia_android/app/build/intermediates/pre-dexed/release/support-annotations-23.3.0_c71e6220742caf92cb4d04e1fc9010dfb4cd31b4.jar" />
+    </item>
+    <item
+        jar="/Users/Henrique/cardapiododia_android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="cc178928721f3222b3b06bdfbd9497378ccb9792">
+        <dex dex="/Users/Henrique/cardapiododia_android/app/build/intermediates/pre-dexed/release/com.google.android.gms-play-services-basement-9.0.0_36e29ffba21a1a0fa919517c3d6efd62037c7086.jar" />
+    </item>
+    <item
+        jar="/Users/Henrique/cardapiododia_android/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="0dc8ab07eeceda5e99b305c8069765056b6e5c9d">
+        <dex dex="/Users/Henrique/cardapiododia_android/app/build/intermediates/pre-dexed/release/com.google.firebase-firebase-analytics-impl-9.0.0_31a566faa4398929bcc6b483688d0abb81ca6915.jar" />
+    </item>
+    <item
+        jar="/Users/Henrique/cardapiododia_android/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="4ef8ab5fee042023018249474bc93bd4b2b9c17e">
+        <dex dex="/Users/Henrique/cardapiododia_android/app/build/intermediates/pre-dexed/release/com.google.firebase-firebase-analytics-9.0.0_df49e74d3a0f382e3650da0db30fba426cebc09d.jar" />
+    </item>
+    <item
+        jar="/Users/Henrique/cardapiododia_android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics-impl/9.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="373cd65725af2781d100ddc193c7d3f14464a774">
+        <dex dex="/Users/Henrique/cardapiododia_android/app/build/intermediates/pre-dexed/release/com.google.android.gms-play-services-analytics-impl-9.0.0_24a0a91a5fad6813176b824c75eec2bf2940c61c.jar" />
+    </item>
+    <item
+        jar="/Users/Henrique/cardapiododia_android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/9.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="b8bedab61b3b5238cd9a07d3b04449d7fecdbc3b">
+        <dex dex="/Users/Henrique/cardapiododia_android/app/build/intermediates/pre-dexed/release/com.google.android.gms-play-services-analytics-9.0.0_d7861a931e26b3152e49af6ffd1ea60968e58bc3.jar" />
+    </item>
+    <item
+        jar="/Users/Henrique/cardapiododia_android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="1941832901fc4e7a93300b53762e9f65d7650b99">
+        <dex dex="/Users/Henrique/cardapiododia_android/app/build/intermediates/pre-dexed/release/com.google.android.gms-play-services-tasks-9.0.0_f26ffd7be950760021a5a32348b2a54f7f38f6fd.jar" />
+    </item>
+    <item
+        jar="/Users/Henrique/cardapiododia_android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="6f65c144283b31b4b9a70e6e7aa4c4a1c897d4b8">
+        <dex dex="/Users/Henrique/cardapiododia_android/app/build/intermediates/pre-dexed/release/com.google.android.gms-play-services-base-9.0.0_84a78af19967d70a706b4349668ef295f82fd919.jar" />
     </item>
 
 </items>

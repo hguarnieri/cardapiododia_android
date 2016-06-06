@@ -121,7 +121,7 @@ public class MenuActivity extends AppCompatActivity {
         if (currentDay == 1 || currentDay == 7) {
             this.currentDay = 0;
         } else {
-            this.currentDay = currentDay - 1;
+            this.currentDay = currentDay - 2;
         }
     }
 
